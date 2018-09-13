@@ -1,3 +1,4 @@
+
 SOURCE = main.c
 OUTPUT = resultat
 LIB = -lm -lSDl -lSDL_ttf
@@ -7,11 +8,14 @@ OPT = -Wall
 
 all: $(OUTPUT)
 
-clean: $(OUTPUT)
+
+
+
+clean:$(OUTPUT)
 	@rm $(OUTPUT)
 
 
-$(OUTPUT): 
+$(OUTPUT): clean
 	@clear
 	@gcc -o resultat main.c
 	@printf "\n"
