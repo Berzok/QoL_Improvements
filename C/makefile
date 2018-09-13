@@ -6,16 +6,15 @@ LDLIBS = -lecpg -lpq
 OPT = -Wall
 .SUFFIXES: .c
 
-all: $(OUTPUT)
+all:$(OUTPUT)
 
 
 
 
 clean:$(OUTPUT)
-	@rm $(OUTPUT)
+	rm $(OUTPUT)
 
-
-$(OUTPUT): clean
+$(OUTPUT):
 	@clear
 	@gcc -o resultat main.c
 	@printf "\n"
