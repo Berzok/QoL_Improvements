@@ -39,14 +39,14 @@ def alea_tableau(*n):
 		tableau.append(max(tableau)+(random.randint(0, 413)))
 		return tableau
 
-def afficher_tableau(leTableau):
-	tableau = leTableau
+def tabDisplay(datTab):
+	theTab = datTab
 	print ""
-	for i in tableau:
-		if i is tableau[0]:
+	for i in theTab:
+		if i is theTab[0]:
 			print "["+str(i)+",",
 			continue
-		if i is tableau[len(tableau)-1]:
+		if i is theTab[len(theTab)-1]:
 			print str(i)+"]"
 			break
 		print str(i)+",",
